@@ -7,7 +7,7 @@ import { splashScreen } from 'vite-plugin-splash-screen';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
-import markdown from 'vite-plugin-vue-markdown';
+import markdown from 'unplugin-vue-markdown/vite';
 import svgLoader from 'vite-svg-loader';
 import { VitePWA } from 'vite-plugin-pwa';
 import AutoImport from 'unplugin-auto-import/vite';
@@ -108,7 +108,7 @@ export default defineConfig({
     wasm(),
     splashScreen({
       logoSrc: 'logo.svg',
-      splashBg: '#292929',
+      splashBg: '#383838',
     }),
   ],
   base: baseUrl,
